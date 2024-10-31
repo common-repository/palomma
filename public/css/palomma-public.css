@@ -1,0 +1,241 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.palomma-description-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  background-color: #3E01B6;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+.palomma-description-wrapper.palomma-inverted-style {
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.payment_box.payment_method_palomma_payments::before {
+  display: none !important;
+}
+.payment_box.payment_method_palomma_payments {
+  background-color: #fff !important;
+  padding: 0px !important;
+  width: 100%;
+}
+.palomma-description-wrapper .palomma-description-logo {
+  margin-right: 10px;
+  line-height: 0;
+  flex: 0 0 140px;
+}
+.palomma-description-wrapper .palomma-description-logo img {
+  max-width: 140px;
+}
+
+.palomma-description-wrapper .palomma-description-main {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  flex: 0 0 calc(100% - 150px);
+}
+.palomma-description-wrapper .palomma-description-main-left {
+  flex: 0 0 calc(100% - 50px);
+}
+.palomma-description-wrapper .palomma-description-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+.palomma-description-wrapper.palomma-inverted-style .palomma-description-title { 
+  color: #000;
+}
+.palomma-description-wrapper .palomma-description {
+  font-size: 14px;
+  color: #fff;
+}
+.palomma-description-wrapper.palomma-inverted-style .palomma-description {
+  color: #000;
+}
+.palomma-description-wrapper .palomma-description-main-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50px;
+  align-self: center;
+}
+.palomma-description-wrapper .palomma-description-main-right img.information-icon {
+  max-width: 30px;
+}
+.palomma-description-wrapper .information-wrapper {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  border-radius: 16px;
+  right: 50px;
+  bottom: 50px;
+  transition: opacity 0.4s linear;
+  /* display: none;
+  width: 400px; */
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.palomma-description-wrapper .palomma-description-main-right:hover + .information-wrapper {
+  visibility: visible;
+  opacity: 1;
+  width: 400px;
+  min-width: 400px;
+}
+.palomma-description-wrapper .information-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  border-bottom: 1px solid #b2b2b2;
+}
+.palomma-description-wrapper .information-header-left {
+  flex: 0 0 calc(50% - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #b2b2b2;
+}
+.palomma-description-wrapper .information-header-right {
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.palomma-description-wrapper .information-header-left img {
+  max-width: 100px;
+}
+.palomma-description-wrapper .information-header-right img {
+  max-width: 115px;
+}
+
+.palomma-description-wrapper .information-body {
+  padding: 15px 10px;
+}
+.palomma-description-wrapper .information-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 2px 0px;
+}
+.palomma-description-wrapper .information-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #3e01b6;
+  padding: 2px 0px;
+}
+.palomma-description-wrapper .information-subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 0px;
+}
+.palomma-description-wrapper ul.information-steps {
+  margin-left: 30px;
+  position: relative;
+  padding: 0px;
+}
+.palomma-description-wrapper ul.information-steps:before {
+  content: '';
+  position: absolute;
+  border: 1px dashed #3e01b6;
+  height: calc(100% - 35px);
+  left: -14px;
+  top: 18px;
+}
+.palomma-description-wrapper ul.information-steps li {
+  padding: 10px 0px;
+  position: relative;
+  font-size: 15px;
+  list-style: none;
+}
+.palomma-description-wrapper ul.information-steps li:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #3e01b6;
+  border-radius: 100%;
+  top: 50%;
+  left: -20px;
+  transform: translate(0px, -50%);
+}
+.palomma-description-wrapper .information-footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #efefef;
+  margin: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* @media only screen and (max-width: 1024px) {
+  .palomma-description-wrapper .palomma-description-logo {
+    flex: 0 0 125px;
+  }
+  .palomma-description-wrapper .palomma-description-main {
+    flex: 0 0 calc(100% - 130px);
+  }
+} */
+@media only screen and (max-width: 1024px) {
+  .palomma-description-wrapper {
+    flex-wrap: wrap;
+}
+  .palomma-description-wrapper .palomma-description-logo {
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    margin: 0px;
+  }
+  .palomma-description-wrapper .palomma-description-main {
+    flex: 0 0 100%;
+  }
+  .palomma-description-wrapper .palomma-description-main-left {
+    flex: 0 0 calc(100% - 50px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .palomma-description-wrapper .information-wrapper {
+    position: static;
+    width: 100% !important;
+    /* visibility: visible;
+    opacity: 1;
+    display: none; */
+    height: 0;
+    transition: none;
+    margin-top: 10px;
+    min-width: 100% !important;
+  }
+  .palomma-description-wrapper .palomma-description-main-right:hover + .information-wrapper {
+    /* display: block; */
+    height: 100%;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .palomma-description-wrapper .palomma-description-main {
+    position: relative;
+    width: 100%;
+  }
+  .palomma-description-wrapper .palomma-description-main-right {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+  .palomma-description-wrapper ul.information-steps:before {
+    display: none;
+  }
+  .palomma-description-wrapper .information-header-left img {
+    max-width: 75px;
+  }
+  .palomma-description-wrapper .information-header-right img {
+    max-width: 90px;
+  }
+}

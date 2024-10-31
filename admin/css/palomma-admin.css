@@ -1,0 +1,10 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.palomma-notice-error {
+  display: none;
+}
+.palomma-notice-error:nth-of-type(1) {
+  display: block;
+}
